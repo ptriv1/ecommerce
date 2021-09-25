@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   Category.findByPk(req.params.id).then((categoryData) => {
     res.json(categoryData);
-  })
+  });
 });
 
 router.post('/', (req, res) => {
